@@ -11,6 +11,15 @@ Rules for this log:
 
 ---
 
+## 2026-11-09 · Daily system switched on
+
+| | |
+|---|---|
+| **Set up by Suraj** | Repository https://github.com/Suraj-Raj-7/Landslide-Prediction-System (first commit by Suraj, sole contributor); Earth Engine service account `daily-run` (roles: Earth Engine Resource Writer, Service Usage Consumer; key kept outside the project), tested on the laptop before use; Gmail app password; 4 secrets, `SITE_URL` variable, Pages source = GitHub Actions. |
+| **First run (manual, 9 Nov 16:24 UTC)** | Success in 4 min 45 s (run 58 s, publish 3 min 35 s). Email received. Page live at https://suraj-raj-7.github.io/Landslide-Prediction-System/ with history. Result: no district on alert today or tomorrow. |
+| **Change after the first run** | Workflow fixed to `ubuntu-24.04` instead of `ubuntu-latest`, because GitHub announced a switch of `ubuntu-latest` to Ubuntu 26; a fixed version avoids a change during the trial week. GitHub's "Node.js 20 is deprecated" notice concerns GitHub's own helper steps and needs no action. |
+| **From now** | Runs daily at 10:00 IST. Vegetation grid to be refreshed monthly (`docs/daily_system_setup.md`). |
+
 ## 2026-11-09 · Final alert rule adopted; daily system built and tested
 
 | | |
