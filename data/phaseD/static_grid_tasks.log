@@ -1,0 +1,8 @@
+strip a: lat 30.300-30.675 -> users/rajsuraj777/hp_grid_static_v1_a task D72PG4JBQN3OVB2GGICHUEY6
+strip b: lat 30.675-31.050 -> users/rajsuraj777/hp_grid_static_v1_b task 7AWBJRR2UI4FBWRWUEWIWPWD
+strip c: lat 31.050-31.425 -> users/rajsuraj777/hp_grid_static_v1_c task ZPJSIL7SJCO3DDJ6DCY5H54J
+strip d: lat 31.425-31.800 -> users/rajsuraj777/hp_grid_static_v1_d task 3AVCDU7E6WG3V42OEB2TWHEO
+strip e: lat 31.800-32.175 -> users/rajsuraj777/hp_grid_static_v1_e task SYDRP6NQO5VVFJP53X6TUOJ4
+strip f: lat 32.175-32.550 -> users/rajsuraj777/hp_grid_static_v1_f task OJQ5G475E2GSH654PDKEBGD4
+strip g: lat 32.550-32.925 -> users/rajsuraj777/hp_grid_static_v1_g task 766ONXV3MCLSUVRFRJJQLVLM
+strip h: lat 32.925-33.300 -> users/rajsuraj777/hp_grid_static_v1_h task XTNGKWRYT7CMCRBX3DFXZHQM

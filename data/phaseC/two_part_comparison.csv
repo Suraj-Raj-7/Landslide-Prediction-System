@@ -1,0 +1,18 @@
+method,timing_auc_all,full_auc_all,timing_auc_HP,full_auc_HP,HP_safe_days_flagged_at_55pct_hit,HP_storm_day_other_slopes_flagged_at_55pct_hit,HP_slides_caught_at_16pct_safe_days
+Rain on the day alone,0.824,0.743,0.805,0.675,0.103,0.401,0.656
+"Single model, live 28, real roads",0.683,0.775,0.705,0.763,0.256,0.139,0.426
+"Single model, live 28, road-neutral",0.741,0.717,0.779,0.699,0.133,0.29,0.6
+"Single model, full 38, real roads",0.746,0.801,0.788,0.79,0.159,0.145,0.59
+"Single model, full 38, road-neutral",0.777,0.738,0.83,0.719,0.087,0.312,0.651
+"WHEN part alone (live, RF)",0.793,0.715,0.804,0.674,0.128,0.327,0.574
+"Two-part live, when=RF, real roads",0.71,0.81,0.717,0.782,0.267,0.108,0.441
+"Two-part live, when=RF, road-neutral",0.756,0.739,0.78,0.703,0.174,0.312,0.518
+"WHEN part alone (live, LR)",0.813,0.739,0.807,0.684,0.128,0.37,0.626
+"Two-part live, when=LR, real roads",0.72,0.813,0.717,0.777,0.215,0.074,0.472
+"Two-part live, when=LR, road-neutral",0.769,0.758,0.781,0.707,0.154,0.312,0.595
+"WHEN part alone (full, RF)",0.824,0.736,0.851,0.696,0.087,0.407,0.728
+"Two-part full, when=RF, real roads",0.738,0.827,0.755,0.805,0.185,0.083,0.523
+"Two-part full, when=RF, road-neutral",0.788,0.761,0.827,0.728,0.087,0.281,0.692
+"WHEN part alone (full, LR)",0.838,0.752,0.844,0.692,0.062,0.386,0.697
+"Two-part full, when=LR, real roads",0.751,0.827,0.761,0.785,0.205,0.096,0.497
+"Two-part full, when=LR, road-neutral",0.797,0.771,0.822,0.719,0.087,0.262,0.682

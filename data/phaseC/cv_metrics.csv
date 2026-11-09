@@ -1,0 +1,10 @@
+model,cv,features,roc_auc,pr_auc,brier
+logistic,by_year,all,0.7799,0.6209,0.1694
+random_forest,by_year,all,0.8013,0.6393,0.1666
+xgboost,by_year,all,0.8069,0.6488,0.1697
+logistic,by_event_date,all,0.7936,0.6452,0.1631
+random_forest,by_event_date,all,0.8193,0.6838,0.1594
+xgboost,by_event_date,all,0.8343,0.6992,0.1537
+logistic,by_year,no_road,0.7617,0.5991,0.1741
+random_forest,by_year,no_road,0.755,0.5944,0.179
+xgboost,by_year,no_road,0.7374,0.5696,0.1889

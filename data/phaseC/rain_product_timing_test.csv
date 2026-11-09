@@ -1,0 +1,7 @@
+region,product,baseline,n_rows,n_missing_product,auc_product,auc_imerg,diff,diff_ci_low,diff_ci_high,better_by_rule
+all,gsmap_d0_ist,imerg_d0_ist,1938,0,0.816,0.824,-0.009,-0.04,0.022,False
+all,gsmap_d0_utc,imerg_d0_utc,1938,0,0.822,0.819,0.003,-0.024,0.03,False
+all,pdirnow_d0_utc,imerg_d0_utc,1938,0,0.761,0.819,-0.058,-0.105,-0.032,False
+HP,gsmap_d0_ist,imerg_d0_ist,390,0,0.801,0.807,-0.006,-0.046,0.037,False
+HP,gsmap_d0_utc,imerg_d0_utc,390,0,0.797,0.79,0.007,-0.031,0.046,False
+HP,pdirnow_d0_utc,imerg_d0_utc,390,0,0.68,0.79,-0.109,-0.158,-0.033,False

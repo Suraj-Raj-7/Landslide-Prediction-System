@@ -1,0 +1,5 @@
+features,n_features,roc_auc,pr_auc,roc_auc_type1,roc_auc_HP
+all 38 (current model),38,0.8013,0.6393,0.7459,0.7904
+no CHIRPS,32,0.7816,0.5834,0.6933,0.7586
+no ERA5-Land soil/snow,34,0.7969,0.6417,0.7402,0.7924
+"no CHIRPS, no ERA5-Land (IMERG + fixed only)",28,0.7752,0.5821,0.6826,0.7625

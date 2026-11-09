@@ -1,0 +1,25 @@
+region,test,method,roc_auc,caught_at_2pct_false_alarm,caught_at_5pct_false_alarm,caught_at_10pct_false_alarm,caught_at_16pct_false_alarm,caught_at_25pct_false_alarm
+All three states,timing,Rain on the day (rule family),0.824,0.271,0.476,0.606,0.679,0.751
+All three states,timing,Rain on the day + 7 days before,0.815,0.265,0.365,0.474,0.611,0.715
+All three states,timing,"Full model (38 features), real roads",0.746,0.079,0.173,0.347,0.471,0.616
+All three states,timing,"Full model (38 features), road-neutral",0.777,0.097,0.249,0.427,0.534,0.656
+All three states,timing,"Live model (28 features), real roads",0.683,0.044,0.128,0.258,0.368,0.485
+All three states,timing,"Live model (28 features), road-neutral",0.741,0.06,0.166,0.331,0.493,0.601
+All three states,full,Rain on the day (rule family),0.743,0.11,0.248,0.406,0.549,0.628
+All three states,full,Rain on the day + 7 days before,0.72,0.045,0.167,0.28,0.431,0.569
+All three states,full,"Full model (38 features), real roads",0.801,0.139,0.318,0.474,0.591,0.706
+All three states,full,"Full model (38 features), road-neutral",0.738,0.096,0.223,0.384,0.486,0.608
+All three states,full,"Live model (28 features), real roads",0.775,0.105,0.249,0.413,0.503,0.64
+All three states,full,"Live model (28 features), road-neutral",0.717,0.06,0.163,0.313,0.475,0.588
+HP only,timing,Rain on the day (rule family),0.805,0.128,0.236,0.549,0.656,0.718
+HP only,timing,Rain on the day + 7 days before,0.802,0.149,0.39,0.482,0.641,0.759
+HP only,timing,"Full model (38 features), real roads",0.788,0.133,0.333,0.436,0.59,0.662
+HP only,timing,"Full model (38 features), road-neutral",0.83,0.123,0.415,0.569,0.651,0.749
+HP only,timing,"Live model (28 features), real roads",0.705,0.077,0.205,0.292,0.426,0.533
+HP only,timing,"Live model (28 features), road-neutral",0.779,0.21,0.246,0.451,0.6,0.656
+HP only,full,Rain on the day (rule family),0.675,0.036,0.118,0.2,0.374,0.528
+HP only,full,Rain on the day + 7 days before,0.671,0.041,0.128,0.2,0.364,0.482
+HP only,full,"Full model (38 features), real roads",0.79,0.174,0.328,0.451,0.605,0.672
+HP only,full,"Full model (38 features), road-neutral",0.719,0.067,0.19,0.338,0.426,0.574
+HP only,full,"Live model (28 features), real roads",0.763,0.113,0.272,0.421,0.513,0.631
+HP only,full,"Live model (28 features), road-neutral",0.699,0.062,0.159,0.282,0.405,0.579

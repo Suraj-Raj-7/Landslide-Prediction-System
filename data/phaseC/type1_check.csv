@@ -1,0 +1,7 @@
+run,roc_auc_type1,ci_low,ci_high
+logistic__by_year,0.7437,0.678,0.7926
+random_forest__by_year,0.7459,0.6448,0.8126
+xgboost__by_year,0.7225,0.6367,0.7905
+logistic__by_year__no_road,0.7531,0.6757,0.8193
+random_forest__by_year__no_road,0.7514,0.6519,0.8198
+xgboost__by_year__no_road,0.7062,0.611,0.7881

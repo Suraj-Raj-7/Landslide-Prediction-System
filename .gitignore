@@ -1,0 +1,23 @@
+# Local-only material: working notes, backups. Never published.
+_private/
+
+# Python environment
+.venv/
+__pycache__/
+*.pyc
+
+# Secrets (service-account keys, passwords) must never be committed
+*.json.key
+*service_account*.json
+.env
+
+# Separate repository (GEE Code Editor scripts, has its own git history)
+gee_scripts_repo/
+
+# Large files that can be regenerated from GEE with the scripts in src/
+data/phaseD/*_features.csv
+data/phaseE/scores/
+
+# Output of the daily run (published as a web page by the workflow, not committed)
+site/
+data/live/grid_pending.json

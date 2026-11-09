@@ -1,0 +1,60 @@
+# Daily landslide outlook for Himachal Pradesh.
+# Runs every morning, scores all of HP for today and tomorrow, emails the
+# result and publishes the web page. Nothing is committed by this workflow:
+# results go to the web page (GitHub Pages) and to a downloadable run record.
+name: Daily landslide outlook
+
+on:
+  schedule:
+    - cron: "30 4 * * *"      # 04:30 UTC = 10:00 IST (GitHub may start a few minutes late)
+  workflow_dispatch:          # "Run workflow" button, for a run on demand
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-outlook
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: requirements-live.txt
+      - name: Install packages
+        run: pip install -r requirements-live.txt
+      - name: Daily run
+        env:
+          EE_SERVICE_ACCOUNT_KEY: ${{ secrets.EE_SERVICE_ACCOUNT_KEY }}
+          ALERT_SENDER: ${{ secrets.ALERT_SENDER }}
+          ALERT_APP_PASSWORD: ${{ secrets.ALERT_APP_PASSWORD }}
+          ALERT_RECIPIENTS: ${{ secrets.ALERT_RECIPIENTS }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: python -W ignore src/live_03_daily_run.py
+      - name: Keep a record of this run (downloadable for 90 days)
+        uses: actions/upload-artifact@v4
+        with:
+          name: run-${{ github.run_id }}
+          path: site/
+          retention-days: 90
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/
+
+  publish:
+    needs: run
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

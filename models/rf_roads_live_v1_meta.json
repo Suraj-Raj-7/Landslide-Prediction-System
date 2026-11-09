@@ -1,0 +1,102 @@
+{
+  "model": "Random Forest with road features, live feature set (IMERG + fixed)",
+  "file": "models/rf_roads_live_v1.joblib",
+  "trained_on": "data/phaseB/training_table_v1.csv",
+  "training_data_sha256": "b59e50032e1f38725d1bbde5787d55e710bc0603cc39c2764a77cd5a9c71ec67",
+  "training_rows": 3136,
+  "trained_date": "2026-11-01",
+  "features_in_order": [
+    "elevation_m",
+    "slope_deg",
+    "aspect_sin",
+    "aspect_cos",
+    "plan_curv",
+    "profile_curv",
+    "tpi_500m",
+    "twi",
+    "dist_stream_m",
+    "hand_m",
+    "dist_road_m",
+    "dist_major_road_m",
+    "glim_code",
+    "rock_code",
+    "dist_fault_m",
+    "dist_thrust_m",
+    "gm_code",
+    "lc_class",
+    "lc_class_30m",
+    "ndvi_pre365",
+    "imerg_d0",
+    "imerg_ant1d",
+    "imerg_ant3d",
+    "imerg_ant7d",
+    "imerg_ant15d",
+    "imerg_ant30d",
+    "imerg_max1d_7d",
+    "era5_glacier"
+  ],
+  "categorical_features": [
+    "glim_code",
+    "rock_code",
+    "gm_code",
+    "lc_class",
+    "lc_class_30m"
+  ],
+  "left_out_features": [
+    "ndvi_pre_n",
+    "imerg_images_31d",
+    "imerg_provisional_31d",
+    "aspect_deg",
+    "chirps_d0",
+    "chirps_ant1d",
+    "chirps_ant3d",
+    "chirps_ant7d",
+    "chirps_ant15d",
+    "chirps_ant30d",
+    "sm_l1_dm1",
+    "sm_l2_dm1",
+    "swe_dm1_mm",
+    "snowmelt_ant7d_mm"
+  ],
+  "settings": {
+    "n_estimators": 500,
+    "min_samples_leaf": 3,
+    "random_state": 20261023
+  },
+  "cv_scores_year_blocked": {
+    "roc_auc": 0.7752,
+    "pr_auc": 0.5821,
+    "roc_auc_HP": 0.7625,
+    "roc_auc_type1": 0.6826
+  },
+  "levels_matched_to_38_feature_hit_rates": {
+    "watch": {
+      "score": 0.345,
+      "hit_rate_HP": 0.549,
+      "false_alarm_safe_day_HP": 0.256
+    },
+    "warning": {
+      "score": 0.441,
+      "hit_rate_HP": 0.333,
+      "false_alarm_safe_day_HP": 0.133
+    }
+  },
+  "alert_levels": "final (Suraj, 9 Nov 2026): see final_alert_rule",
+  "versions": {
+    "scikit-learn": "1.9.1",
+    "pandas": "3.1.0"
+  },
+  "final_alert_rule": {
+    "scoring": "road-neutral (dist_road_m and dist_major_road_m set to the median of the training positives)",
+    "cell_watch": 0.37637,
+    "cell_warning": 0.46349,
+    "district_rule": "district at a level when >= 30% of its cells within 500 m of a road reach it",
+    "source": "Phase E storm replays, documentation 17.10",
+    "road_neutral_values_m": {
+      "dist_road_m": 22.099730291658652,
+      "dist_major_road_m": 45.98079406928074
+    },
+    "district_share": 0.3,
+    "road_zone_m": 500
+  }
+}

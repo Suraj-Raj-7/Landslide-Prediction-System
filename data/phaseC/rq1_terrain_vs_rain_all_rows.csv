@@ -1,0 +1,5 @@
+features,n_features,roc_auc_all,roc_auc_HP,roc_auc_timing
+Terrain and fixed features only,19,0.419,0.444,0.06
++ pre-event vegetation (NDVI),21,0.444,0.46,0.068
++ IMERG rain (live model),28,0.772,0.764,0.677
+"+ CHIRPS rain, soil moisture, snow (full model)",38,0.801,0.79,0.746

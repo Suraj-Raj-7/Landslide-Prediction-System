@@ -1,0 +1,7 @@
+model,test,roc_auc_all,roc_auc_HP,roc_auc_timing
+Single live model (28),Whole years held out (ours),0.775,0.763,0.683
+Single live model (28),Whole storm days held out,0.792,0.751,0.707
+Single live model (28),Random rows held out (easy),0.856,0.803,0.802
+Single full model (38),Whole years held out (ours),0.801,0.79,0.746
+Single full model (38),Whole storm days held out,0.819,0.787,0.772
+Single full model (38),Random rows held out (easy),0.88,0.827,0.855

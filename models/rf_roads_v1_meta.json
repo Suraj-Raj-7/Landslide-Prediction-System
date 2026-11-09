@@ -1,0 +1,88 @@
+{
+  "model": "Random Forest with road features",
+  "file": "models/rf_roads_v1.joblib",
+  "trained_on": "data/phaseB/training_table_v1.csv",
+  "training_data_sha256": "b59e50032e1f38725d1bbde5787d55e710bc0603cc39c2764a77cd5a9c71ec67",
+  "training_rows": 3136,
+  "positives": 969,
+  "trained_date": "2026-10-24",
+  "features_in_order": [
+    "elevation_m",
+    "slope_deg",
+    "aspect_sin",
+    "aspect_cos",
+    "plan_curv",
+    "profile_curv",
+    "tpi_500m",
+    "twi",
+    "dist_stream_m",
+    "hand_m",
+    "dist_road_m",
+    "dist_major_road_m",
+    "glim_code",
+    "rock_code",
+    "dist_fault_m",
+    "dist_thrust_m",
+    "gm_code",
+    "lc_class",
+    "lc_class_30m",
+    "ndvi_pre365",
+    "imerg_d0",
+    "imerg_ant1d",
+    "imerg_ant3d",
+    "imerg_ant7d",
+    "imerg_ant15d",
+    "imerg_ant30d",
+    "imerg_max1d_7d",
+    "chirps_d0",
+    "chirps_ant1d",
+    "chirps_ant3d",
+    "chirps_ant7d",
+    "chirps_ant15d",
+    "chirps_ant30d",
+    "sm_l1_dm1",
+    "sm_l2_dm1",
+    "swe_dm1_mm",
+    "snowmelt_ant7d_mm",
+    "era5_glacier"
+  ],
+  "categorical_features": [
+    "glim_code",
+    "rock_code",
+    "gm_code",
+    "lc_class",
+    "lc_class_30m"
+  ],
+  "left_out_features": [
+    "ndvi_pre_n",
+    "imerg_images_31d",
+    "imerg_provisional_31d",
+    "aspect_deg"
+  ],
+  "settings": {
+    "n_estimators": 500,
+    "min_samples_leaf": 3,
+    "random_state": 20261023
+  },
+  "alert_levels_provisional": {
+    "watch": 0.35,
+    "warning": 0.45
+  },
+  "valid_area": "cells within 500 m of a motorable road (documentation section 17.8)",
+  "target": "reported landslides near roads",
+  "cv_scores": {
+    "by_year": {
+      "roc_auc": 0.8013,
+      "pr_auc": 0.6393
+    },
+    "by_event_date": {
+      "roc_auc": 0.8193,
+      "pr_auc": 0.6838
+    }
+  },
+  "versions": {
+    "scikit-learn": "1.9.1",
+    "pandas": "3.1.0",
+    "numpy": "2.5.4"
+  }
+}

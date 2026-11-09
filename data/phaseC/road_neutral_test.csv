@@ -1,0 +1,5 @@
+model,prediction,roc_auc_all,roc_auc_type1_test,remote_positives_n,remote_positives_HP_n,remote_mean_score,near_mean_score,remote_at_watch,remote_HP_at_watch,all_positives_at_watch,type1_false_alarm_at_watch,type2_false_alarm_at_watch,remote_at_warning,remote_HP_at_warning,all_positives_at_warning,type1_false_alarm_at_warning,type2_false_alarm_at_warning
+rf_38_features,real road distance,0.801,0.746,70,9,0.349,0.394,0.471,0.333,0.59,0.237,0.095,0.329,0.222,0.375,0.109,0.028
+rf_38_features,road-neutral,0.738,0.777,70,9,0.416,0.452,0.571,0.444,0.724,0.307,0.423,0.443,0.444,0.541,0.164,0.22
+rf_28_live,real road distance,0.775,0.683,70,9,0.358,0.393,0.486,0.444,0.556,0.323,0.086,0.3,0.444,0.375,0.164,0.026
+rf_28_live,road-neutral,0.717,0.741,70,9,0.421,0.459,0.6,0.444,0.718,0.372,0.451,0.4,0.444,0.563,0.218,0.23

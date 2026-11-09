@@ -1,0 +1,13 @@
+model,features,negatives,roc_auc
+logistic,all,same_place_safe_day,0.7437
+logistic,all,similar_place_storm_day,0.8092
+logistic,no_road,same_place_safe_day,0.7531
+logistic,no_road,similar_place_storm_day,0.7687
+random_forest,all,same_place_safe_day,0.7459
+random_forest,all,similar_place_storm_day,0.8461
+random_forest,no_road,same_place_safe_day,0.7514
+random_forest,no_road,similar_place_storm_day,0.7579
+xgboost,all,same_place_safe_day,0.7225
+xgboost,all,similar_place_storm_day,0.8753
+xgboost,no_road,same_place_safe_day,0.7062
+xgboost,no_road,similar_place_storm_day,0.7626

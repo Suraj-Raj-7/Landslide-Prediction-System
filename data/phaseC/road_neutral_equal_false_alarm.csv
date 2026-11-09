@@ -1,0 +1,9 @@
+model,prediction,type1_false_alarm,threshold,all_positives_caught,remote_caught,remote_HP_caught,type2_flagged
+rf_38_features,real,0.16,0.406,0.471,0.386,0.333,0.051
+rf_38_features,real,0.25,0.339,0.616,0.514,0.444,0.103
+rf_38_features,neutral,0.16,0.453,0.534,0.443,0.444,0.215
+rf_38_features,neutral,0.25,0.39,0.656,0.529,0.444,0.344
+rf_28_live,real,0.16,0.455,0.368,0.286,0.444,0.025
+rf_28_live,real,0.25,0.388,0.485,0.443,0.444,0.065
+rf_28_live,neutral,0.16,0.488,0.493,0.357,0.444,0.179
+rf_28_live,neutral,0.25,0.425,0.601,0.429,0.444,0.277

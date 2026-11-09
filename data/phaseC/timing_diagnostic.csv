@@ -1,0 +1,5 @@
+model,region,roc_auc_timing
+Live RF trained on positives vs Type 1 only,all,0.769
+Live RF trained on positives vs Type 1 only,HP,0.802
+Rain on the day alone,all,0.824
+Rain on the day alone,HP,0.805

@@ -1,0 +1,13 @@
+district,cells,rain_on_day_mean_mm,road_neutral_share_watch_or_above,road_neutral_share_warning,road_neutral_district_level,real_roads_share_watch_or_above,real_roads_share_warning,real_roads_district_level,recorded_slides
+Bilaspur,1162,0.389,0.0,0.0,none,0.0,0.0,none,0
+Chamba,6453,2.27,0.003,0.0,none,0.037,0.001,none,0
+Hamirpur,1131,0.56,0.0,0.0,none,0.0,0.0,none,0
+Kangra,5694,2.053,0.01,0.0,none,0.017,0.0,none,0
+Kinnaur,6192,0.637,0.019,0.001,none,0.067,0.004,watch,0
+Kullu,5514,0.709,0.004,0.0,none,0.023,0.001,none,0
+Lahul & Spiti,13498,0.449,0.002,0.0,none,0.038,0.001,none,0
+Mandi,3950,0.279,0.0,0.0,none,0.0,0.0,none,0
+Shimla,5133,0.1,0.0,0.0,none,0.004,0.0,none,0
+Sirmaur,2805,0.095,0.001,0.0,none,0.001,0.0,none,0
+Solan,1932,0.23,0.0,0.0,none,0.0,0.0,none,0
+Una,1534,0.024,0.0,0.0,none,0.0,0.0,none,0

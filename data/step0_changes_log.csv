@@ -1,0 +1,14 @@
+action,id,field,old,new,reason
+fix,BH_8569,lon,75.15313889,77.15313889,"Labelled HP/Solan, slide H.P./SOL/53F01/2018. Sheet 53F/1 spans 30.75-31.00N, 77.00-77.25E; lat 30.997 fits, lon 75.153 lies in Punjab. Leading digit typo 75->77."
+fix,BH_35971,lat,31.94500556,30.94500556,"Labelled UK/Uttarkashi, slide UK/Uttarkashi/53F_13/2019/05. Sheet 53F/13 spans 30.75-31.00N, 77.75-78.00E; lon 77.853 fits, lat 31.945 lies in Kinnaur (HP). Digit typo 31->30."
+fix,BH_35861_1,event_date/event_end,2018-08-06,2025-08-06,"Raw '06 August at 07.30 hrs, 18 August at 07.35 hrs and 26 August 2025 at 09.15hrs'. Parser read '18 August' as year 2018. All three dates are 2025."
+add,BH_35861_3,event_date/event_end,,2025-08-18,"Third date in the same BH_35861 record, lost by the parser."
+drop,BH_8460_2,row,"HP 2025-08-01 31.5625,77.98194444",,"Date 2025-08-01 came from a lone '1' in '27 October 2023, 1, 26 August 2025'. The intended date cannot be recovered."
+drop,"NASA_5,088",row,"UK 2013-07-12 29.3802,79.4633",,"Duplicate of NASA_5,086: same date 2013-07-12, identical coordinates."
+drop,"NASA_5,234",row,"JK 2013-07-29 32.9918,75.1945",,"Duplicate of NASA_5,233: same date 2013-07-29, identical coordinates."
+drop,"NASA_3,895",row,"HP 2011-08-07 31.0766,77.3913",,"Duplicate of NASA_3,894: same date 2011-08-07, 29 m apart."
+drop,BH_10901,row,"JK 2025-08-17 32.442188,75.531513",,"Duplicate of BH_10952: same date 2025-08-17, 0.9 m apart. BH_10901 has the numeric re-entry slide id 3436; BH_10952 has the full id JK/KAT/43P11/2025/049."
+drop,BH_11272,row,"JK 2025-08-17 32.447265,75.518707",,"Duplicate of BH_10955: same date 2025-08-17, 0.9 m apart. BH_11272 has the numeric re-entry slide id 3491; BH_10955 has the full id JK/KAT/43P11/2025/052."
+keep,BH_35882,event_date,2005-07-29,2005-07-29,"Slide no. says 2025 but the same 2025 survey series records past events (BH_35884 2015-08-29, BH_35885 2015-07-27). Raw '29 July and 30 July 2005' is unambiguous."
+keep,12 NASA points in Ladakh,state,JK,JK,"Inside geoBoundaries Ladakh: 9 near Leh (7 are the 2010-08-06 Leh cloudburst) and 3 in Kargil district (NASA_4823, NASA_11484, NASA_5244). Real events. Kept with admin_unit=Ladakh so they can be filtered later."
+rename,all NASA ids,id,"NASA_9,892",NASA_9892,Comma removed (GEE rewrote it to '_').

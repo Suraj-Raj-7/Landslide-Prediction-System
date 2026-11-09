@@ -1,0 +1,13 @@
+region,method,safe_days_flagged,slides_caught,n_slides,n_safe_days
+All three states,Rule: rain on the day >= 64.5 mm (IMD heavy),0.02,0.262,969,969
+All three states,Rule: rain on the day + 7 days before >= 210 mm,0.02,0.264,969,969
+All three states,"Full model (38 features), real roads",0.02,0.079,969,969
+All three states,"Full model (38 features), road-neutral",0.02,0.094,969,969
+All three states,"Live model (28 features), real roads",0.02,0.044,969,969
+All three states,"Live model (28 features), road-neutral",0.02,0.06,969,969
+HP only,Rule: rain on the day >= 64.5 mm (IMD heavy),0.031,0.2,195,195
+HP only,Rule: rain on the day + 7 days before >= 210 mm,0.031,0.349,195,195
+HP only,"Full model (38 features), real roads",0.031,0.169,195,195
+HP only,"Full model (38 features), road-neutral",0.031,0.354,195,195
+HP only,"Live model (28 features), real roads",0.031,0.108,195,195
+HP only,"Live model (28 features), road-neutral",0.031,0.221,195,195
