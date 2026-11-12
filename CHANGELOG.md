@@ -11,6 +11,19 @@ Rules for this log:
 
 ---
 
+## 2026-11-12 · Full-monsoon replays (2023 and 2025)
+
+| | |
+|---|---|
+| **What** | `src/impact_01_monsoon_replay.py` runs the live system for every day from 15 Jun to 30 Sep (108 days) of a past monsoon, with the model trained without that year. Plain-language write-up: `docs/monsoon_replay_explained.md`. Results in `data/impact/`, pictures `docs/figures/monsoon_2023_calendar.png` and `monsoon_2025_calendar.png`. |
+| **Why** | Evidence for the impact section ("proof of concept"): what a district office would have received for a whole season, not only on 32 chosen days. |
+| **Results** | 2023: 17 of 22 district-days with a recorded slide were on alert that day or the day before (77%; 12 already the day before); 426 of 1,296 district-days on alert (33%), 402 without a recorded slide that day or the next. 2025: 24 of 35 (69%; 20 the day before); 333 alert district-days (26%), 291 without a recorded slide. |
+| **Reading** | Good catch rate with a day's notice, but a high alert load (about 1 monsoon day in 3–4 per district). Many "extra" alerts may be unrecorded slides (the inventory has almost no 2023 events in the lower districts), so they are an upper bound on false alarms. The rule was **not** changed after seeing these results; alert fatigue is named as the main risk for a pilot to measure. |
+| **Checks** | Days after the vegetation cut-off only (2023 from 7 Jul, 2025 from 16 Jul): 17 of 21 and 23 of 32 caught, same conclusion. No recorded slide outside the 12 districts. |
+| **Bugs fixed during the run** | Summary step used `.level` on a pandas group (reserved name in pandas 3) → crashed after scoring; fixed with `["level"]`, and the script now reuses the saved daily table instead of rescoring. A code restructuring broke indentation; rewritten and rerun. |
+
+---
+
 ## 2026-11-09 · Daily system switched on
 
 | | |
