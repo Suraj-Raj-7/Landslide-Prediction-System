@@ -1,0 +1,27 @@
+district,days,part,watch_or_warning_days,warning_days,days_with_recorded_slides,slide_days_on_alert_day_or_day_before,slide_days_alert_already_day_before,slide_days_missed,alert_days_with_slide_that_day_or_next,alert_days_without_recorded_slide
+Bilaspur,108,whole monsoon,40,24,0,0,0,0,0,40
+Chamba,108,whole monsoon,33,11,0,0,0,0,0,33
+Hamirpur,108,whole monsoon,53,27,0,0,0,0,0,53
+Kangra,108,whole monsoon,53,32,0,0,0,0,0,53
+Kinnaur,108,whole monsoon,14,4,2,1,1,1,2,12
+Kullu,108,whole monsoon,23,12,3,3,2,0,5,18
+Lahul & Spiti,108,whole monsoon,16,6,0,0,0,0,0,16
+Mandi,108,whole monsoon,47,25,4,4,3,0,6,41
+Shimla,108,whole monsoon,27,14,4,4,2,0,5,22
+Sirmaur,108,whole monsoon,41,20,1,0,0,1,0,41
+Solan,108,whole monsoon,37,15,8,5,4,3,6,31
+Una,108,whole monsoon,42,24,0,0,0,0,0,42
+HP (all districts),108,whole monsoon,426,214,22,17,12,5,24,402
+Bilaspur,86,from 2023-07-07 (vegetation fully before each day),33,21,0,0,0,0,0,33
+Chamba,86,from 2023-07-07 (vegetation fully before each day),31,11,0,0,0,0,0,31
+Hamirpur,86,from 2023-07-07 (vegetation fully before each day),46,25,0,0,0,0,0,46
+Kangra,86,from 2023-07-07 (vegetation fully before each day),45,30,0,0,0,0,0,45
+Kinnaur,86,from 2023-07-07 (vegetation fully before each day),14,4,2,1,1,1,2,12
+Kullu,86,from 2023-07-07 (vegetation fully before each day),22,11,3,3,2,0,5,17
+Lahul & Spiti,86,from 2023-07-07 (vegetation fully before each day),15,6,0,0,0,0,0,15
+Mandi,86,from 2023-07-07 (vegetation fully before each day),40,22,4,4,3,0,6,34
+Shimla,86,from 2023-07-07 (vegetation fully before each day),24,13,4,4,2,0,5,19
+Sirmaur,86,from 2023-07-07 (vegetation fully before each day),36,18,0,0,0,0,0,36
+Solan,86,from 2023-07-07 (vegetation fully before each day),32,12,8,5,4,3,6,26
+Una,86,from 2023-07-07 (vegetation fully before each day),38,22,0,0,0,0,0,38
+HP (all districts),86,from 2023-07-07 (vegetation fully before each day),376,195,21,17,12,4,24,352

@@ -1,0 +1,22 @@
+grid 2023: 55253 cells
+rain: 2023-05-16 .. 2023-06-09
+rain: 2023-06-10 .. 2023-07-04
+rain: 2023-07-05 .. 2023-07-29
+rain: 2023-07-30 .. 2023-08-23
+rain: 2023-08-24 .. 2023-09-17
+rain: 2023-09-18 .. 2023-09-30
+model trained without 2023
+scored up to 2023-07-01
+scored up to 2023-08-01
+scored up to 2023-09-01
+Traceback (most recent call last):
+  File "G:\ALL PROJECTS\Landslide Prediction Project\src\impact_01_monsoon_replay.py", line 193, in <module>
+    main()
+    ~~~~^^
+  File "G:\ALL PROJECTS\Landslide Prediction Project\src\impact_01_monsoon_replay.py", line 182, in main
+    summ = pd.concat([summarise(daily, "whole monsoon"),
+                      ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\ALL PROJECTS\Landslide Prediction Project\src\impact_01_monsoon_replay.py", line 94, in summarise
+    prev = d.groupby("district").level.shift(1).fillna("none") != "none"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'shift'
