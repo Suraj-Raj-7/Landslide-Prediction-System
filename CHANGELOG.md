@@ -11,6 +11,17 @@ Rules for this log:
 
 ---
 
+## 2026-11-12 · Impact assessment section (proposed method)
+
+| | |
+|---|---|
+| **What** | `docs/impact_assessment.md`: the report's impact section, written as the professor asked (31 Oct mail): a *proposed* impact-assessment method with survey questions and formats, usable by any partner as a one-monsoon pilot plan. No budget (Suraj, 12 Nov). Not tied to any organisation continuing the work. |
+| **Contents** | Summary; proof of concept (storm replays, two full-monsoon replays, live system); theory of change (prediction → delivery → trust → action → benefit, with what can break each link); users; fit with the UN *Early Warnings for All* four pillars; position next to official IMD/GSI warnings (decision support for officials, never a replacement); evaluation questions; pilot design (baseline, shadow month, live season, review; before/after and pilot vs neighbouring districts, because withholding safety warnings is not acceptable); 14 indicators; qualitative evidence; success criteria to be fixed before the live season; risks, fairness and ethics (alert fatigue, false sense of safety, conflicting messages, uneven coverage, digital divide, personal data, data dependence, responsibility); glossary. |
+| **Appendices** | A: officials' questionnaire; B: road agencies and police; C: residents and travellers (some themes adapted from Suraj's earlier socio-economic landslide survey, reworded around warnings; only question headings were read, not responses); D: per-alert feedback form; E: alert and action log with event stories; F: monthly summary. All with a consent text. |
+| **Sources checked** | UN/WMO Early Warnings for All (four pillars); GSI National Landslide Forecasting Centre bulletins (Bhusanket portal); Piciullo et al. 2017 (Landslides 14(3), 995–1008, doi 10.1007/s10346-016-0750-2); Calvello & Piciullo 2016. |
+
+---
+
 ## 2026-11-12 · Full-monsoon replays (2023 and 2025)
 
 | | |
