@@ -6,11 +6,17 @@ name: Daily landslide outlook
 
 on:
   schedule:
-    - cron: "30 4 * * *"      # 04:30 UTC = 10:00 IST (GitHub may start a few minutes late)
-  workflow_dispatch:          # "Run workflow" button, for a run on demand
+    # GitHub starts scheduled runs "when it can": in the first days the 10:00 IST
+    # run started 7-8 hours late. So it is asked three times each morning; the
+    # first attempt that starts does the work, later ones see it is done and stop.
+    - cron: "30 0 * * *"      # 00:30 UTC = 06:00 IST
+    - cron: "30 2 * * *"      # 02:30 UTC = 08:00 IST
+    - cron: "30 4 * * *"      # 04:30 UTC = 10:00 IST
+  workflow_dispatch:          # "Run workflow" button: always runs
 
 permissions:
   contents: read
+  actions: read               # lets the check step see earlier runs of this workflow
   pages: write
   id-token: write
 
@@ -19,7 +25,27 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      done: ${{ steps.today.outputs.done }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Has today's outlook already been made?
+        id: today
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            python3 src/live_00_already_ran_today.py >> "$GITHUB_OUTPUT"
+          else
+            echo "done=false" >> "$GITHUB_OUTPUT"
+          fi
+
   run:
+    needs: check
+    if: needs.check.outputs.done != 'true'
     runs-on: ubuntu-24.04     # fixed version: the first run (9 Nov 2026) worked on it; avoids a mid-trial switch to Ubuntu 26
     timeout-minutes: 30
     steps:
@@ -50,8 +76,8 @@ jobs:
           path: site/
 
   publish:
-    needs: run
-    runs-on: ubuntu-24.04     # fixed version: the first run (9 Nov 2026) worked on it; avoids a mid-trial switch to Ubuntu 26
+    needs: run                # skipped automatically when "run" is skipped
+    runs-on: ubuntu-24.04
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}

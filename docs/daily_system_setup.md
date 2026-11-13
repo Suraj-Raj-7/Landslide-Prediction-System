@@ -3,7 +3,11 @@
 Written 9 Nov 2026. Everything below is done by Suraj; nothing is pushed or committed automatically.
 
 ## 1. What runs every morning
-At 10:00 IST GitHub starts `src/live_03_daily_run.py` (workflow: `.github/workflows/daily.yml`). In about one minute it:
+Every morning GitHub starts `src/live_03_daily_run.py` (workflow: `.github/workflows/daily.yml`).
+
+**Timing.** GitHub starts scheduled runs "when it can", not exactly on time: in the first days (10–13 Nov 2026) the 10:00 IST run started between 17:32 and 18:36 IST. So the workflow asks three times, at 06:00, 08:00 and 10:00 IST. The first attempt that starts does the work. Later attempts first run `src/live_00_already_ran_today.py`, see that today's outlook already exists, and stop, so the email is not sent twice. A manual "Run workflow" always runs.
+
+In about one minute the run:
 1. reads the HP grid file `data/live/grid_live.csv.gz` (55,253 squares of 1 km: terrain, rock, roads, land cover, district, vegetation);
 2. adds rain for **today and tomorrow** (`src/live_02_rain.py`): measured satellite rain (IMERG) as far as it goes, about 1.5 days behind, and the GFS weather forecast for the rest;
 3. scores every square with the live model and applies the final alert rule (`docs/alert_rule_explained.md`);

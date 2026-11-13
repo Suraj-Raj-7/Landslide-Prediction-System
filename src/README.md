@@ -9,10 +9,11 @@ All code is Python. Run scripts **from the project's main folder**, for example:
 Every script starts with a comment block that explains, in plain words, what it does, why, what it reads and what it writes. The groups below follow the order in which the project was built.
 
 ## 1. The daily system (start here)
-These three files are the working warning system.
+These files are the working warning system.
 
 | Script | What it does | How often |
 |---|---|---|
+| `live_00_already_ran_today.py` | Checks whether today's outlook was already made, so the three morning attempts send only one email | Before each scheduled run |
 | `live_01_monthly_grid.py` | Makes the HP grid file (`data/live/grid_live.csv.gz`): all 55,253 squares with their fixed features, district and vegetation | Once a month |
 | `live_02_rain.py` | Rain for today and tomorrow for every square: measured satellite rain, plus forecast rain for the hours not yet measured | Used by the daily run |
 | `live_03_daily_run.py` | Scores every square, decides district levels, draws maps, builds the web page, sends the email | Every morning (GitHub Actions) |

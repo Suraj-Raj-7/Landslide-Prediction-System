@@ -11,6 +11,18 @@ Rules for this log:
 
 ---
 
+## 2026-11-13 · Daily run: three morning attempts, one email
+
+| | |
+|---|---|
+| **Problem found** | Every scheduled run since 10 Nov succeeded, but GitHub started them 7–8 hours late: scheduled for 10:00 IST, actually started 18:24, 17:32, 18:36 and 18:00 IST (10–13 Nov, from the GitHub Actions run list). GitHub documents that scheduled runs can be delayed when it is busy. The outlook was correct, only late. |
+| **Change** | `.github/workflows/daily.yml` now has three schedules (06:00, 08:00, 10:00 IST) and a first job `check` that runs `src/live_00_already_ran_today.py`: it asks GitHub's API whether this workflow already succeeded today (Indian date) and, if so, the run and publish jobs are skipped. Manual runs always run. If the API cannot be reached the run goes ahead (an extra email is better than a missed day). Permission `actions: read` added for this check. |
+| **Tests (on the laptop)** | Against the real run history on 13 Nov: `done=true` (one successful run today). With an unreachable repository: `done=false`. |
+| **If it is still late** | Next option: an outside scheduler that presses "Run workflow" at a fixed time (needs a GitHub token); not set up unless needed. |
+| **Docs** | `docs/daily_system_setup.md` (timing), `src/README.md`. |
+
+---
+
 ## 2026-11-12 · Guides for new visitors; questionnaire formatting
 
 | | |
