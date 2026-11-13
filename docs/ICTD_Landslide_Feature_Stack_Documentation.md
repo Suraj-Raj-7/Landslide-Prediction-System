@@ -797,8 +797,8 @@ Citations marked ✓ were checked by web search during this work (authors, year,
 - ✓ Kirschbaum, D., Stanley, T. (2018). Satellite-based assessment of rainfall-triggered landslide hazard for situational awareness. *Earth's Future* 6, 505–523. doi:10.1002/2017EF000715
 - ✓ Stanley, T., et al. (2021). Data-driven landslide nowcasting at the global scale. *Frontiers in Earth Science* 9, 640043. doi:10.3389/feart.2021.640043
 - ✓ Froude, M., Petley, D. (2018). Global fatal landslide occurrence from 2004 to 2016. *Natural Hazards and Earth System Sciences* 18, 2161. doi:10.5194/nhess-18-2161-2018
-- ✓ McAdoo, B., et al. (2018). [Study of road expansion and landslides in Nepal.] *Natural Hazards and Earth System Sciences* 18, 3203–3210. (Journal, volume and pages verified; check the exact title before citing.)
-- ✓ Leibundgut, G., et al. (2016). [Study of earthen rural roads, erosion and shallow landslides in the Phewa watershed, Nepal.] *Geoenvironmental Disasters*. doi:10.1186/s40677-016-0047-8 (check the exact title before citing.)
+- ✓ McAdoo, B. G., Quak, M., Gnyawali, K. R., Adhikari, B. R., Devkota, S., Rajbhandari, P. L., Sudmeier-Rieux, K. (2018). Roads and landslides in Nepal: how development affects environmental risk. *Natural Hazards and Earth System Sciences* 18(12), 3203–3210. doi:10.5194/nhess-18-3203-2018 (title verified 13 Nov 2026)
+- ✓ Leibundgut, G., et al. (2016). Rural earthen roads impact assessment in Phewa watershed, Western region, Nepal. *Geoenvironmental Disasters* 3, 13. doi:10.1186/s40677-016-0047-8 (title verified 13 Nov 2026)
 - ✓ Time-varying NDVI as a landslide conditioning factor, Quang Ngai, Vietnam. *Open Geosciences* (2023). https://doaj.org/article/4326d226457a46d1b0ea99164b8cdb69
 - ✓ Pre-event NDVI in a typhoon-triggered landslide model. ACRS 2016 poster. https://a-a-r-s.org/proceeding/ACRS2016/
 

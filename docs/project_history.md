@@ -97,7 +97,7 @@ Items marked **[to confirm]** come from incomplete notes and should be checked b
 
 ## 3. Why this problem
 
-- **The hazard.** HP suffers frequent rainfall-triggered landslides. The 2023 monsoon alone brought more than 7,000 landslides, 509 deaths, about 12,300 homes destroyed or damaged and about 1,300 roads blocked for weeks (figures as cited in our Assignment 1 paper; primary source to be re-checked for the final report).
+- **The hazard.** HP suffers frequent rainfall-triggered landslides. The 2023 monsoon alone brought more than 7,000 landslides, 509 deaths, about 12,300 homes destroyed or damaged and about 1,300 roads blocked for weeks (figures as cited in our Assignment 1 paper). **Check of 13 Nov 2026:** no primary source for 509 deaths or 7,000 landslides was found. Official data reported by Mongabay (Sept 2023) give 428 deaths in weather-related events in the 2023 monsoon (125 in 2022), 2,614 houses and 318 shops fully damaged and more than 11,000 houses partly damaged; use these, with that source, unless the original source is found.
 - **The gap.** Published HP studies produce **static susceptibility maps** (AHP or frequency ratio). They say *where* slides are likely, not *when*. GSI's regional landslide forecasting system covered only Shimla and Kinnaur in HP as of the 2025 monsoon.
 - **Background.** Suraj studied civil engineering at IIT Mandi and lived in HP for four years. An earlier IIT Mandi practicum surveyed landslide-affected households in Mandi and Kullu. That survey motivated the topic, but it is **not** used as data here.
 - **Target user.** District and state disaster authorities. The instructor's guidance: a system that sends its output to the responsible authority is enough, because public alerting is the authority's job.
@@ -812,11 +812,16 @@ All free; no paid services.
 - Method papers: Montgomery & Dietrich 1988; Montgomery & Foufoula-Georgiou 1993; Zevenbergen & Thorne 1987.
 - IMD rainfall categories (heavy rain 64.5–115.5 mm per day): IMD national bulletins.
 
-**To verify before the final report:**
-- Dhiman, Prakash & Banshtu 2026 (journal name);
-- McAdoo et al. 2018 and Leibundgut et al. 2016 (exact titles);
-- Saaty (AHP) and Varnes / Cruden & Varnes / Hungr et al. (landslide classification), full entries;
-- the 2023 HP disaster figures (primary source).
+**Checked on 13 Nov 2026:**
+- McAdoo, B. G. et al. (2018). Roads and landslides in Nepal: how development affects environmental risk. *Natural Hazards and Earth System Sciences* 18(12), 3203–3210. doi:10.5194/nhess-18-3203-2018
+- Leibundgut, G. et al. (2016). Rural earthen roads impact assessment in Phewa watershed, Western region, Nepal. *Geoenvironmental Disasters* 3, 13. doi:10.1186/s40677-016-0047-8
+- Saaty, T. L. (1980). *The Analytic Hierarchy Process*. McGraw-Hill, New York.
+- Varnes, D. J. (1978). Slope movement types and processes. In Schuster, R. L., Krizek, R. J. (eds), *Landslides: Analysis and Control*, Special Report 176, Transportation Research Board, Washington DC, 11–33.
+- Cruden, D. M., Varnes, D. J. (1996). Landslide types and processes. In Turner, A. K., Schuster, R. L. (eds), *Landslides: Investigation and Mitigation*, Special Report 247, Transportation Research Board, Washington DC, 36–75.
+- Hungr, O., Leroueil, S., Picarelli, L. (2014). The Varnes classification of landslide types, an update. *Landslides* 11(2), 167–194.
+- 2023 HP figures: see §3 (509 deaths / 7,000 landslides not found in a primary source; official figures via Mongabay, Sept 2023: 428 deaths).
+
+**Still open:** Dhiman, Prakash & Banshtu 2026 (Chandra-Bhaga, AUC 0.90) was not found online; use it only with the original PDF or link from the Assignment 1 literature review.
 
 ---
 

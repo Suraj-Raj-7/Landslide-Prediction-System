@@ -11,6 +11,17 @@ Rules for this log:
 
 ---
 
+## 2026-11-13 · Key facts sheet, reference check, demo plan
+
+| | |
+|---|---|
+| **Key facts** | `docs/key_facts.md`: every final number (data, models, alert rule, replays, storm maps, whole monsoons, live system), each read from its result file on 13 Nov, with the file named. Use it to check slides and the report. |
+| **References checked** | McAdoo et al. 2018 and Leibundgut et al. 2016: exact titles, volumes and DOIs confirmed and corrected in the technical documentation and project history. Saaty 1980, Varnes 1978, Cruden & Varnes 1996, Hungr et al. 2014: full entries added. **Not found:** Dhiman, Prakash & Banshtu 2026 (use only with the original PDF or link). **2023 HP figures:** "509 deaths, 7,000+ landslides" (Assignment 1) not traceable to a primary source; official data via Mongabay (Sept 2023): 428 deaths, 2,614 houses and 318 shops fully damaged, more than 11,000 houses partly damaged. Recorded in `docs/project_history.md` and the key facts sheet. |
+| **Demo plan** | `docs/demo/demo_plan.md`: 4-minute script, checklist for the day before, a backup for every step, short answers to likely questions. Offline copy of the live page of 13 Nov: `docs/demo/live_page_13nov/` (about 0.5 MB). |
+| **Small fix** | The district tables on the live page and in the email said "Rain today" also in the tomorrow table; now "Rain on the day" (`src/live_03_daily_run.py`). |
+
+---
+
 ## 2026-11-13 · Daily run: three morning attempts, one email
 
 | | |
