@@ -141,6 +141,7 @@ If these are not met, the result is still useful: it shows which link of the cha
 
 ## 7. After the pilot: what could change
 Changes are made **only from pilot evidence**, not before:
+
 1. **District-specific alert levels**, if the shadow month and feedback show that some districts get too many alerts.
 2. **More channels and languages:** SMS or WhatsApp in Hindi, if surveys show email is too slow or not read.
 3. **Official forecasts as inputs:** IMD rain forecasts alongside the free global forecast.
@@ -175,26 +176,31 @@ All questionnaires start with the consent text below. Questions marked *(baselin
 *About 15 minutes. Interview or form.*
 
 **About you**
+
 1. Office and district. *(both)*
 2. Your role (e.g. District Disaster Management Officer, control-room operator). *(both)*
 3. Years in this role: ☐ <1 ☐ 1–3 ☐ 3–5 ☐ >5 *(baseline)*
 
 **Current warnings** *(baseline)*
+
 4. Which landslide or heavy-rain warnings do you receive today? ☐ IMD ☐ GSI landslide bulletin ☐ State control room ☐ News or social media ☐ None ☐ Other: ___
 5. How do they reach you? ☐ Email ☐ SMS ☐ WhatsApp ☐ Phone call ☐ Website ☐ Other: ___
 6. How early do they usually arrive before a landslide? ☐ Same day ☐ 1 day ☐ 2+ days ☐ Usually after the event
 7. On a scale of 1 (not at all) to 5 (fully), how useful are the current warnings for deciding what to do?
 
 **What you do when a warning comes** *(baseline)*
+
 8. Is there a written procedure for what to do at each warning level? ☐ Yes ☐ No ☐ Not sure
 9. Which actions does your office take after a warning? (tick all) ☐ Rescue teams on standby ☐ Inform road agencies ☐ Move machines ☐ Close or restrict roads ☐ Advisory to public/tourists ☐ Evacuate ☐ None ☐ Other: ___
 10. What usually stops your office from acting on a warning? (tick all) ☐ Warning too vague (area too large) ☐ Arrives too late ☐ Too many false alarms ☐ No staff or machines ☐ Not our responsibility ☐ Other: ___
 
 **Alert load** *(baseline)*
+
 11. In one monsoon, how many alert days for your district would you consider acceptable if most of them were right? ☐ <10 ☐ 10–20 ☐ 20–30 ☐ >30
 12. Which is worse for your work: ☐ a missed landslide ☐ a false alarm ☐ both equally? Why? ___
 
 **About our system** *(end)*
+
 13. How often did you read the daily alert? ☐ Daily ☐ Most days ☐ Sometimes ☐ Rarely
 14. "The alert was easy to understand" (1 = strongly disagree … 5 = strongly agree).
 15. "I trusted the alert" (1–5).
@@ -207,6 +213,7 @@ All questionnaires start with the consent text below. Questions marked *(baselin
 
 ## Appendix B. Questionnaire for road agencies (PWD, BRO, NHAI) and police/transport
 *About 10 minutes.*
+
 1. Organisation, division and district. *(both)*
 2. Road stretches you are responsible for (names or numbers). *(baseline)*
 3. In the last monsoon, roughly how many times were your roads blocked by landslides? ☐ <5 ☐ 5–20 ☐ 20–50 ☐ >50 *(baseline)*
@@ -223,17 +230,20 @@ All questionnaires start with the consent text below. Questions marked *(baselin
 *About 10 minutes. Name and phone number are optional. Used also as a guide for group discussions.*
 
 **About you** (all optional except district)
+
 1. District and village/town: ___
 2. Age group: ☐ Below 22 ☐ 22–55 ☐ Above 55
 3. You are mainly: ☐ Resident ☐ Driver (taxi, bus, truck) ☐ Shop or hotel owner ☐ Farmer ☐ Tourist ☐ Government staff ☐ Other: ___
 
 **Experience with landslides** *(baseline)*
+
 4. Has your area been affected by landslides in the last 5 years? ☐ Yes ☐ No ☐ Not sure
 5. How many times? ☐ Once ☐ 2–5 times ☐ More than 5 times
 6. Have you ever been stuck or delayed on a road because of a landslide? ☐ Never ☐ Once ☐ Several times. If yes, for how long (longest time)? ☐ <3 h ☐ 3–12 h ☐ >12 h ☐ More than a day
 7. Has a landslide affected your work or income (e.g. lost days of work, closed shop, damaged crops)? ☐ Yes ☐ No
 
 **Warnings today** *(both)*
+
 8. Did you get any warning before the last landslide that affected you? ☐ Yes ☐ No ☐ Don't remember. If yes, from whom and how long before? ___
 9. Where do you get weather or landslide warnings today? (tick all) ☐ SMS ☐ WhatsApp ☐ TV/radio ☐ Newspaper ☐ Panchayat ☐ Police ☐ Neighbours ☐ None
 10. Which way would you most like to receive a warning? ☐ SMS ☐ WhatsApp ☐ Phone call ☐ Loudspeaker/siren ☐ Panchayat ☐ Radio
@@ -241,6 +251,7 @@ All questionnaires start with the consent text below. Questions marked *(baselin
 12. Who would you trust most to give you a warning? ☐ District administration ☐ Police ☐ Panchayat ☐ IMD/weather service ☐ News ☐ Other: ___
 
 **Would a warning change what you do?** *(both)*
+
 13. If you got a warning in the evening that landslides are likely tomorrow in your district, what would you do? (tick all) ☐ Delay or cancel travel ☐ Choose another route ☐ Move vehicle or goods ☐ Stay indoors/away from slopes ☐ Tell family and neighbours ☐ Nothing ☐ Other: ___
 14. If warnings came often and nothing happened, would you still pay attention? ☐ Yes ☐ Less over time ☐ No
 15. Is there a local group (e.g. panchayat committee, volunteers) that helps people prepare for landslides? ☐ Yes ☐ No ☐ Don't know
