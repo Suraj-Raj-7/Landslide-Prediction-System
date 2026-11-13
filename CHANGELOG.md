@@ -11,6 +11,17 @@ Rules for this log:
 
 ---
 
+## 2026-11-12 · Guides for new visitors; questionnaire formatting
+
+| | |
+|---|---|
+| **Why** | The repository is read by people with no background on the project. Each main folder now has a short guide in plain words. |
+| **Changes** | `README.md` rewritten (story, live link, picture, how it works in five steps, results, honest limits, where to look, how to run, sources, credits); new `docs/README.md` (what to read first, list of all documents, glossary), `src/README.md` (every script grouped in the order the project was built), `data/README.md` (every folder, the key files, and which large files stay on the computer and how to remake them). All links checked. |
+| **Big files** | Kept where they are. They are already in the repository history, so moving or removing them now would not make it smaller, and moving would break scripts that expect them in place. New large regenerable files stay out through `.gitignore`. |
+| **Formatting fix** | In `docs/impact_assessment.md` the numbered questions in Appendices A–C ran together into one paragraph on GitHub; a blank line after each sub-heading fixes it. |
+
+---
+
 ## 2026-11-12 · Impact assessment section (proposed method)
 
 | | |
